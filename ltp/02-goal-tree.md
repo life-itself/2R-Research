@@ -2,90 +2,121 @@
 
 ## Purpose
 
-Define the enduring conditions required for the Research Circle to create
-cumulative, plural, action-guiding inquiry.
+State the enduring conditions required for the 2R movement to adopt LTP and
+benefit from it.
 
-## Entities
+Built from the 2026-07-24 whiteboard. The whiteboard holds two clusters: a left
+cluster carrying the goal, its throughput, and two success factors, and a right
+cluster whose top box becomes a success factor once movement-wide adoption is
+taken as the goal.
 
-**G-1 — Goal**
+## Goal
 
-2R inquiry becomes cumulative, plural, and action-guiding through a continually
-improving shared model.
+**G-1 — The 2R movement adopts LTP and benefits from it.** `confirmed`, high.
 
-**Critical Success Factors**
+## Critical Success Factors
 
-- CSF-1 — Contributions have a path from expression to model impact.
-- CSF-2 — Model changes receive legitimate, transparent, reversible
-  dispositions.
-- CSF-3 — The model preserves reasoning, evidence, disagreement, and downstream
-  implications.
-- CSF-4 — Trees align across scales without erasing autonomy or difference.
+What adoption means, from the whiteboard's two marginal notes:
 
-**Necessary Conditions**
+- **CSF-1** — A non-trivial subset of the movement is actively using LTP.
+- **CSF-2** — LTP is used in shared spaces such as the forum, so that even
+  people who are not "bought in" benefit from it.
 
-- NC-1 — Contributions remain linked to source.
-- NC-2 — Model objects and revisions have stable identity and provenance.
-- NC-3 — Standing, review, objections, and authority are explicit.
-- NC-4 — Participation does not require tree fluency.
-- NC-5 — Research is judged by model improvement and relevance.
-- NC-6 — Scale boundaries and grafting rules are explicit.
-- NC-7 — Uptake flow and the current research constraint are reviewed.
+What benefiting means, from the whiteboard's Results axis:
+
+- **CSF-3** — Discussion on the 2R forum is more productive and cumulative.
+  `provisional` — David wrote this box with a question mark.
+- **CSF-4** — The tools help the 2R movement learn and improve by assessing
+  measurable progress toward its goals.
+
+What makes adoption possible:
+
+- **CSF-5** — 2R Research adopts updating the 2R goal tree as its own goal. The
+  dogfooding condition, and the top of the whiteboard's right-hand chain.
+- **CSF-6** — There are articulated reasons to adopt LTP that land with people.
+- **CSF-7** — LTP is integrated into the forum.
+- **CSF-8** — People beyond David and Rufus, and beyond 2R, are discovering the
+  vision and the tools.
+- **CSF-9** — We have funding for this work to build the tools and docs we want.
+
+## Necessary Conditions
+
+Under `CSF-5`, the dogfooding branch:
+
+- **NC-1** — We can update the 2R goal tree. Governance as much as tooling: who
+  may change a consequential tree has been open since June (`EVD-15`).
+- **NC-2** — We have a tool for building trees and updating them. → `NC-1`
+- **NC-3** — We have a way of committing to action and tracking it against the
+  trees.
+- **NC-4** — There is one source of truth for the transition tree. → `NC-3`
+- **NC-5** — There is a known format for a transition tree in markdown. → `NC-4`
+- **NC-6** — There is a way to view the transition tree. → `NC-4`
+- **NC-7** — Tasks and actions are tracked against the tree nodes they serve.
+  → `NC-3`
+
+Under `CSF-6`, what "reasons for adoption" consists of:
+
+- **NC-8** — We have evidence that the method and the tools work.
+- **NC-9** — We have a convincing story of how and where LTP would help. Marked
+  with one flame in the notes, and flagged there as possibly a UDE.
+- **NC-10** — We have an engaging and accessible vision, for others, of what we
+  are doing.
+- **NC-11** — We have agreed on user needs, offers, and vision. Also necessary
+  for `CSF-9`.
+
+Under `CSF-7`, forum integration:
+
+- **NC-12** — A finalized 2R goal tree exists that is fit to show.
+- **NC-13** — It is decided which trees to show and how to present them usefully.
+- **NC-14** — There is a process linking the trees to forum posts, so there is a
+  pathway to discovering and enriching the trees. Also necessary for `CSF-8`.
+
+Cross-cutting:
+
+- **NC-15** — The most salient information is presented to a viewer when they
+  look at a tree. The notes call this "bespoke focusing" and mark it as a UX
+  cause behind several items, so it serves both `CSF-1` and `NC-13`.
+- **NC-16** — Taking part in LTP is light enough that people do not have to
+  master the formalism. `inferred` — the inverse of "LTP is heavy duty and
+  complex and taxing", stated as a condition so it can be tested. Serves `CSF-1`
+  and `CSF-2`.
+- **NC-17** — The trees are used as the source of truth for assessing progress
+  and learning. Serves `CSF-4`; `NC-8` sits beneath it.
 
 ## Logical connections
 
-L-001–L-004 state that all four CSFs are necessary for G-1. L-005–L-011
-connect the necessary conditions to their CSFs.
+`L-010` to `L-018` state that all nine CSFs are necessary for `G-1`.
+`L-020` to `L-055` connect the necessary conditions to what they serve.
 
 Necessity reading:
 
-> To make inquiry cumulative, it is necessary that contributions can alter the
-> shared model; that changes are legitimate; that their reasoning survives;
-> and, for the full vision, that alignment does not erase local difference.
+> For the movement to adopt LTP and benefit from it, it is necessary that some
+> real subset of it uses LTP; that people who never touch a tree still gain from
+> the outputs; that the two people who built the method run on it themselves;
+> that there are reasons to adopt which land; that it lives where the movement
+> already talks; and that it is discoverable beyond the people who made it.
 
-## Evidence
+## Above the goal
 
-EVD-4–EVD-10, with EVD-8 providing the strongest direct evidence for the
-Research Circle goal.
+`G-1` → `HLO-1` (a more effective and healthy 2R movement) → `VIS-1`, `VIS-2`,
+with `CSF-4` → `LEARN-1` → `HLO-1`. These are recorded in the model and
+deliberately excluded from this view: they are outcomes this system aims at, not
+conditions it controls, and including them would displace `G-1` as the view's
+root.
 
-## Assumptions
+## Conditions not currently satisfied
 
-ASM-1 and ASM-4–ASM-7. CSF-4 is least certain: federation is necessary for the
-full collective-intelligence vision, but not for the first research pilot.
+On the evidence available, none of the seventeen necessary conditions is
+established. `NC-2` is the closest — a tree-building and viewing tool exists in
+the `project-ltp` dashboard — but `UDE-2` and `UDE-4` say directly that it is not
+yet being used consistently or as a source of truth. The Current Reality Tree
+takes up why.
 
-## Confidence
+## Structural choice to review
 
-High for G-1 and CSF-1–CSF-3; medium for CSF-4's position as immediately
-necessary.
-
-## Open reservations
-
-- Who is the beneficiary of the Research Circle's improved model?
-- What makes a delta an improvement rather than a change?
-- Can the group succeed locally before solving cross-scale grafting?
-
-## Diagram
-
-```mermaid
-flowchart BT
-  NC1["NC-1 Source-linked contributions"] --> CSF1["CSF-1 Path to model impact"]
-  NC4["NC-4 No tree-fluency barrier"] --> CSF1
-  NC3["NC-3 Legitimate authority"] --> CSF2["CSF-2 Governed dispositions"]
-  NC2["NC-2 Stable identity and provenance"] --> CSF3["CSF-3 Cumulative reasoning"]
-  NC5["NC-5 Improvement-based research"] --> CSF3
-  NC7["NC-7 Constraint review"] --> CSF3
-  NC6["NC-6 Scale and graft rules"] --> CSF4["CSF-4 Plural alignment"]
-  CSF1 --> G1["G-1 Cumulative, plural, action-guiding inquiry"]
-  CSF2 --> G1
-  CSF3 --> G1
-  CSF4 --> G1
-```
-
-Text: source-linked, accessible contributions support uptake; legitimate
-authority supports governance; provenance, relevance, and review support
-cumulative reasoning; graft rules support plural alignment; all serve G-1.
-
-## Cross-tree references
-
-RC-1 threatens CSF-1. RC-2 threatens CSF-2. RC-3 and UDE-3 threaten CSF-3.
-RC-5 and UDE-7 threaten CSF-4.
-
+The whiteboard states five success factors flat in its right-hand cluster.
+Four of them — evidence-it-works, convincing story, engaging vision, agreed user
+needs — are nested here under `CSF-6`, on the reading that the left cluster's
+unfinished "Reasons for adoption …" box is what they are the content of. If that
+reading is wrong, they become peer CSFs and `CSF-6` disappears. Logged as an
+open question.

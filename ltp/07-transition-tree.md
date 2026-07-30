@@ -2,127 +2,160 @@
 
 ## Purpose
 
-Turn the prerequisite objectives into evidence-producing actions.
+Turn the hypotheses already written in the problem-tree notes into executable
+transitions, each with the effect it should produce and the condition it
+advances.
 
-## Transition 1 — Manual uptake pilot
+Every action here comes from a `Hyp:` in the notes or from an explicit open
+question in them. Nothing was invented to fill the tree.
 
-**Transition ID:** ACT-1 / TR-1
-**Current reality:** The prompt contains useful contributions and revision
-questions, but no complete contribution-to-model disposition.
-**Need:** Test the entire loop before designing a platform or permanent
-governance.
-**Action:** Select one recent Research Circle paper or session. Assign a
-contributor, mapper/steward, and at least two reviewers. Use a one-page
-provisional charter, governance rule, and delta template to map one material
-contribution to the current 2R tree and dispose of it.
-**Expected immediate effect:** TR-1 — One source-linked delta is accepted,
-disputed, rejected, or deferred, and process frictions are recorded.
-**Expected contribution:** Achieves IO-4 and tests RC-1, INJ-1, ASM-25, and the
-candidate throughput definition.
-**Prerequisites:** Identify a canonical tree version; participant consent;
-time-box; provisional roles; source access.
-**Verification:** Source excerpt, target IDs, proposed change, rationale,
-objections, disposition, reviewer identities/standing, time spent, and next
-model version are recorded.
-**Likely scope:** one contribution, one branch, one review cycle.
-**Risk:** Pilot rules are mistaken for permanent legitimacy.
-**Rollback:** Mark all outputs provisional; preserve the source and prior model;
-allow withdrawal and reversal.
-**Traceability:** OBS-1–OBS-4 → IO-1–IO-4 → INJ-1 → CSF-1/CSF-2 → G-1.
-**Confidence:** High.
+Ordering is recorded on each action's `prerequisites` field rather than as links,
+so the view stays a clean action → effect → condition projection:
+`ACT-1` before `ACT-2` and `ACT-3`; `ACT-4` before `ACT-5`.
 
-## Transition 2 — Adopt governance v0.1
+---
 
-**Transition ID:** ACT-2 / TR-2
-**Current reality:** Pilot governance is deliberately provisional.
-**Need:** Incorporate observed friction before recurring use.
-**Action:** Review the pilot with participants and affected stewards; revise
-standing, dispositions, timing, appeal, minority reports, and conflicts of
-interest; adopt v0.1 for a fixed number of cycles.
-**Expected immediate effect:** TR-2 — A versioned protocol has named roles,
-standing, dispositions, review timing, and appeal.
-**Expected contribution:** Achieves IO-2 and enables repeated uptake.
-**Prerequisites:** TR-1 and participant feedback.
-**Verification:** Version, decision record, dissent, expiry/review date, and
-owner are recorded.
-**Likely scope:** governance document and change log.
-**Risk:** Early participants entrench themselves.
-**Rollback:** Sunset clause, rotation, and explicit re-ratification.
-**Traceability:** OBS-2 → IO-2 → INJ-3 → CSF-2 → G-1.
-**Confidence:** High.
-
-## Transition 3 — Evaluate AI assistance
-
-**Transition ID:** ACT-3 / TR-3
-**Current reality:** Automated alignment suggestions are reported as
-insufficiently poignant; no baseline exists.
-**Need:** Learn where AI reduces work and where it distorts meaning.
-**Action:** Independently map the pilot contribution by a human steward and an
-AI assistant, then compare target nodes, proposed deltas, omitted evidence,
-false positives, rival interpretations, and correction time.
-**Expected immediate effect:** TR-3 — Mapping accuracy, correction effort,
-failure modes, and confirmation needs are evidenced.
-**Expected contribution:** Achieves IO-5 and bounds INJ-5.
-**Prerequisites:** IO-4, stable IDs, source-preserving template, contributor
-confirmation.
-**Verification:** Blind comparison and correction log.
-**Likely scope:** one to three contributions.
-**Risk:** A tiny sample is treated as general validation.
-**Rollback:** Keep AI advisory-only and publish the coverage limit.
-**Traceability:** OBS-5 → IO-5 → INJ-5 → DE-1.
-**Confidence:** Medium.
-
-## Transition 4 — Pairwise grafting experiment
-
-**Transition ID:** ACT-4 / TR-4
-**Current reality:** Individual/group/everyone grafting is a conceptual vision
-without tested semantics.
-**Need:** Test plurality on two real models before designing an everyone tree.
-**Action:** With one aligned peer group, select one bounded branch and map
-shared entities, incompatible assumptions, local-only conditions, disputed
-links, provenance, governance boundaries, and exit conditions.
-**Expected immediate effect:** TR-4 — One graft preserves agreement,
-difference, provenance, and reversibility.
-**Expected contribution:** Achieves IO-6 and tests INJ-2.
-**Prerequisites:** Both groups govern their own models; consent and scope;
-stable IDs; no automatic merge.
-**Verification:** Each group can recover its original tree; disagreements
-remain visible; no entity silently changes meaning.
-**Likely scope:** one branch across two group trees.
-**Risk:** False consensus or negotiation overhead.
-**Rollback:** Delete only the graft relationship; retain both source models.
-**Traceability:** OBS-6 → IO-6 → INJ-2 → CSF-4 → G-1.
-**Confidence:** Low.
-
-## Logical connections
-
-```mermaid
-flowchart TB
-  A1["ACT-1 Manual uptake pilot"] --> T1["TR-1 Disposition and friction evidence"] --> I4["IO-4 Completed uptake"]
-  A2["ACT-2 Adopt governance v0.1"] --> T2["TR-2 Versioned protocol"] --> I2["IO-2 Governance"]
-  A3["ACT-3 Compare AI and steward"] --> T3["TR-3 Mapping evidence"] --> I5["IO-5 AI evaluation"]
-  A4["ACT-4 Pairwise graft"] --> T4["TR-4 Plural graft record"] --> I6["IO-6 Grafting evidence"]
+```text
+Transition ID:            ACT-1  →  TR-1
+Current reality:          IC-6 — no source of truth for the transition tree.
+                          IC-7 — the markdown format for one is unknown.
+Need:                     NC-4, NC-5 — one canonical location and a known format.
+Action:                   Define a markdown format for a transition tree and
+                          commit one filled-in transition tree to the 2R-Research
+                          repo as its single source of truth.
+Expected immediate effect: TR-1 — a canonical transition tree exists in a known
+                          format and location, so an action can be written down,
+                          found again, and reviewed.
+Expected contribution:    NC-3 → CSF-5 → G-1. Removes the deepest cause under
+                          the current constraint.
+Prerequisites:            none. This is why it goes first.
+Verification:             A named path holds a transition tree whose actions each
+                          cite the tree entity they serve, and Rufus can read and
+                          comment on it without further explanation.
+Likely scope:             2R-Research — ltp/07-transition-tree.md, ltp/ltp-model.yaml
+Risk:                     The format is designed once and abandoned because
+                          maintaining it is more onerous than the whiteboard it
+                          replaces.
+Rollback:                 Text under version control; revert, or reduce to a flat
+                          action list.
+Traceability:             addresses IC-6, IC-7; achieves NC-4, NC-5
+Confidence:               high
 ```
 
-Text: manual uptake first; governance revision second; AI evaluation third;
-cross-group grafting only after internal governance evidence.
+```text
+Transition ID:            ACT-2  →  TR-2
+Current reality:          IC-5 — no tracker for tasks and actions; tracking is verbal.
+Need:                     NC-7 — actions tracked against the tree nodes they serve.
+Action:                   Open GitHub Issues linked one-to-one to transition tree
+                          nodes, replacing verbal tracking.
+Expected immediate effect: TR-2 — every committed action has a tracked item
+                          traceable to a tree node, and progress becomes visible
+                          while the method is dog-fooded.
+Expected contribution:    NC-3 → CSF-5 → G-1. Directly attacks IC-4.
+Prerequisites:            ACT-1 — issues need tree nodes to point at.
+Verification:             Every action in the transition tree has exactly one open
+                          or closed issue, and each issue names its tree entity.
+Likely scope:             2R-Research issues; issue references written back into
+                          the transition tree.
+Risk:                     Issues drift out of step with the tree and a second,
+                          contradictory source of truth appears.
+Rollback:                 Close the issues; the transition tree remains
+                          authoritative on its own.
+Traceability:             addresses IC-5; achieves NC-7, NC-3
+Confidence:               high
+```
 
-## Evidence
+```text
+Transition ID:            ACT-3  →  TR-3
+Current reality:          IC-8 — no way to view a transition tree.
+Need:                     NC-6 — a way to view it.
+Action:                   Ship a transition-tree view in the dashboard so current
+                          actions can be read without opening YAML.
+Expected immediate effect: TR-3 — David and Rufus can see current actions against
+                          the tree, so reviewing progress does not require
+                          reading the model source.
+Expected contribution:    NC-4 → NC-3 → CSF-5 → G-1.
+Prerequisites:            ACT-1 — the view needs a format to render.
+Verification:             David and Rufus each open the dashboard and correctly
+                          say what the current action is and which condition it
+                          serves, without help.
+Likely scope:             logical-thought-process-issue-trees-app —
+                          skills/project-ltp/dashboard/src
+Risk:                     Effort goes into the viewer while the underlying
+                          commitments are still not being kept.
+Rollback:                 The view is additive; the markdown transition tree stays
+                          readable without it.
+Traceability:             addresses IC-8; achieves NC-6
+Confidence:               high
+```
 
-EVD-4, EVD-5, EVD-7, EVD-8, EVD-10, and EVD-14–EVD-16.
+```text
+Transition ID:            ACT-4  →  TR-4
+Current reality:          IC-9, IC-10, IC-11 — no finalized 2R goal tree, and it
+                          is undecided which trees to show and how.
+Need:                     NC-12, NC-13 — something stable and presentable to
+                          point at.
+Action:                   Decide which 2R trees to show and how, then finalize and
+                          publish that version of the 2R goal tree.
+Expected immediate effect: TR-4 — one canonical, presentable 2R goal tree exists,
+                          so forum posts and presented materials have something
+                          stable to point at.
+Expected contribution:    CSF-7 → G-1.
+Prerequisites:            none formally, but see the risk: NC-1 should be settled
+                          first.
+Verification:             One named, dated version of the 2R goal tree is public
+                          and can be linked from a forum post.
+Likely scope:             2R-Research — docs/ltp_trees/; the published site
+Risk:                     Finalizing unilaterally repeats the June problem, where
+                          revisions from Rufus and Margaret had no agreed
+                          disposition process and one person decided (EVD-15).
+Rollback:                 Versions are dated, so a published version can be
+                          superseded rather than deleted.
+Traceability:             addresses IC-9, IC-10, IC-11; achieves NC-12, NC-13
+Confidence:               medium
+```
 
-## Assumptions
+```text
+Transition ID:            ACT-5  →  TR-5
+Current reality:          IC-12 — no process linking the trees to forum posts, so
+                          no pathway to discovering or enriching them.
+Need:                     NC-14 — such a pathway.
+Action:                   Link a batch of real forum and WhatsApp posts to tree
+                          nodes by hand, then judge from that what is worth
+                          automating.
+Expected immediate effect: TR-5 — a measured manual pathway from discussion to
+                          tree exists, with evidence about which part of it is
+                          worth automating.
+Expected contribution:    CSF-7 and CSF-8 → G-1.
+Prerequisites:            ACT-4 — there must be a settled tree to map posts onto.
+Verification:             A recorded batch of posts mapped to tree nodes, with the
+                          time taken per post and the share of posts that map to
+                          nothing.
+Likely scope:             2R-Research — an annotation log; forum posts
+Risk:                     Manual mapping is done once, reads as busywork, and
+                          yields no decision about automation.
+Rollback:                 The mapping log is an addition; nothing in the forum
+                          changes.
+Traceability:             addresses IC-12; achieves NC-14
+Confidence:               medium
+```
 
-One bounded pilot can reveal enough about process viability to justify or
-redirect later work.
+---
 
-## Open reservations
+## Why the automation question is answered manually first
 
-Owners, participants, meeting artifacts, the canonical current tree, and an
-external partner remain unspecified.
+The notes ask "How would we automate this from e.g. whatsapp posts?" as an open
+question. `ACT-5` deliberately does not answer it by building automation. The
+prior attempt in this direction — the Bluesky bridge — produced suggestions that
+were, by David's own account, not poignant enough, because the trees were not
+mature and the matching was weak (`EVD-16`). Measuring the manual path is what
+makes the automation question answerable rather than repeating that.
 
-## Cross-tree references
+## What is deliberately absent
 
-ACT-1 is the recommended next action. ACT-2–ACT-4 should be revised from its
-evidence rather than treated as a fixed roadmap.
-
+No transition addresses `IC-2` (people struggle with trees), `IC-13` (salience
+and presentation), or `IC-14` (LTP is heavy duty). Those are real root causes and
+they bear on `NC-15` and `NC-16`, but every available lever on them depends on
+other people's behaviour, and none of them is the current constraint. They are
+candidates for the next cycle, once the loop in `03-current-reality-tree.md` is
+broken.

@@ -1,0 +1,37 @@
+﻿Problem Tree
+* UDE: “People aren’t using LTP other than Rufus/David atm” aka There’s a lack of buy-in for the LTP 
+   * IC: We don’t have evidence that it’s helping yet
+   * IC: People struggle with trees/structured thinking/complexity
+   * IC: we don’t have a convincing story of how/where it would help [could be a UDE] 🔥
+* UDE: Rufus and David are not using (LTP) consistently … 🔥🔥🔥
+   * IC: We have no way of committing to action ⇒ Hyp: have a transition tree with items tracked in a tracker like github issues
+      * IC: we have no tracker for tasks / actions [Hyp: Set up GitHub Issues (or Linear) linked 1:1 to transition/prerequisite tree nodes: Replaces verbal tracking; enables a live display of progress as the method is dog-fooded.]
+      * IC: don’t have a source of truth for transition tree [Hyp: use our github repo knowledgebase]
+         * IC: don’t know format for a transition tree in markdown H
+         * IC: don’t have a way to view
+* UDE: “LTP is not showing up on forum and being used” aka: A lack of use of LTP results/outputs e.g. on the forum, in presenting our materials
+   * IC: we haven’t finalized a 2R (goal) tree
+      * IC: what tree(s) do we want to show?
+      * IC: how do we present them usefully (similar to UDE below)
+   * IC: we haven’t got an (automated) process for linking that tree to forum posts or similar to there is a pathway to discovering the tree (and enriching the tree)
+      * How would we automate this from e.g. whatsapp posts?
+* UDE: The trees are not being used as a source of truth for assessing progress and learning
+ICs (common to several items)
+* IC: The most salient information is not presented to the viewer when they look at trees e.g. on our website (bespoke focusing)[a]
+* IC: LTP is heavy duty and complex and taxing …
+
+
+Conflict Resolution
+* Intermediate Objective (IO): 
+* IO: 
+
+
+
+
+  
+
+
+
+
+
+[a]i would say this is a UX IC behind several other items.

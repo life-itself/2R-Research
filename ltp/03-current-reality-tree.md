@@ -2,90 +2,113 @@
 
 ## Purpose
 
-Explain why Research Circle contributions do not yet reliably accumulate into
-legitimate shared-model improvements.
+Explain why the necessary conditions in the Goal Tree are not satisfied — why
+LTP is not being used, starting with by the two people who built it.
 
-## Entities
+This tree is a direct transcription of `docs/notes/2026-07-30-problem-tree-notes.txt`,
+restructured only where the notes' own labels were inconsistent with the causal
+shape they describe.
 
-**Root causes**
+## Undesirable Effects
 
-- RC-1 — No legitimate low-friction contribution-to-model uptake loop.
-- RC-2 — Revision authority and governance are undefined.
-- RC-3 — No source-linked change-proposal representation.
-- RC-4 — Matching/master-tree platform ideas precede process maturity.
-- RC-5 — Cross-scale tree interfaces and graft semantics are undefined.
+- **UDE-1** — Nobody except Rufus and David is using LTP, so there is a lack of
+  buy-in for it.
+- **UDE-2** — Rufus and David are not using LTP consistently. **Three flames in
+  the notes: the highest priority of the four.**
+- **UDE-3** — LTP results and outputs are not showing up where the movement
+  works, such as the forum and our presented materials.
+- **UDE-4** — The trees are not being used as a source of truth for assessing
+  progress and learning.
 
-**Undesirable effects**
+All four are `observed`, high confidence.
 
-- UDE-1 — Suggestions and objections lack disposition.
-- UDE-2 — Consequential trees remain vulnerable to a few points of failure.
-- UDE-3 — Discussions recur without shared vision changing.
-- UDE-4 — Contributors appear to choose freedom or structured accumulation.
-- UDE-5 — Automated matches lack reliable synergy.
-- UDE-6 — Research can be "relevant" without improving the model.
-- UDE-7 — A 2R group tree can become an imposed universal frame.
-- UDE-8 — Contributions remain hidden or disconnected from where they help.
+## Causes
 
-## Logical connections
+Under `UDE-1`:
+
+- **IC-1** — We do not have evidence that LTP is helping yet. *(intermediate —
+  it has a cause of its own, see the loop below)*
+- **IC-2** — People struggle with trees, structured thinking, and complexity.
+  *(intermediate — caused by `IC-14`)*
+- **IC-3** — We do not have a convincing story of how or where LTP would help.
+  One flame. David's own note says this could be a UDE rather than a cause.
+
+Under `UDE-2`, the fullest chain in the notes:
+
+- **IC-4** — We have no way of committing to action. **← current constraint**
+  - **IC-5** — We have no tracker for tasks and actions.
+  - **IC-6** — We have no source of truth for the transition tree.
+    - **IC-7** — We do not know the format for a transition tree in markdown.
+    - **IC-8** — We have no way to view a transition tree.
+
+Under `UDE-3`:
+
+- **IC-9** — We have not finalized a 2R goal tree.
+  - **IC-10** — It is not decided which trees we want to show.
+  - **IC-11** — It is not decided how to present the trees usefully.
+- **IC-12** — We have no automated process linking the trees to forum posts, so
+  there is no pathway to discovering or enriching them.
+
+Common to several effects, as the notes' own final section says:
+
+- **IC-13** — The most salient information is not presented to the viewer when
+  they look at a tree, for example on our website. The notes' footnote calls this
+  "a UX IC behind several other items", so it is modelled as a cause of `UDE-1`,
+  `UDE-4`, and `IC-11`.
+- **IC-14** — LTP is heavy duty, complex, and taxing. A cause of `IC-2` and a
+  contributor to `UDE-2`.
+
+## The reinforcing loop
+
+The notes list `UDE-2` and `UDE-4` separately and give `UDE-4` no causes. Reading
+their content together produces a loop that none of the four effects escapes:
 
 ```text
-RC-2 → UDE-1 → UDE-3
-  └──→ UDE-2
-
-RC-1 → UDE-4 → UDE-8 → UDE-6 → UDE-3
-  └────────────────────→ UDE-6
-
-RC-4 → UDE-5
-RC-5 → UDE-7
+UDE-2  Rufus and David are not using LTP consistently   (L-119)
+  ↓
+UDE-4  The trees are not the source of truth for progress   (L-120)
+  ↓
+IC-1   We do not have evidence that LTP is helping yet   (L-100)
+  ↓
+UDE-1  Nobody else is using LTP — lack of buy-in
 ```
 
-Key causal reading:
+Plus `UDE-2 → UDE-1` directly (`L-117`), on the assumption that if the method's
+authors do not run on it, nobody else will (`ASM-2`), and `UDE-2 → UDE-3`
+(`L-118`).
 
-> If no uptake loop exists, research can be declared relevant without a
-> durable shared-model effect, because contribution activity has no required
-> transition into a reviewed model delta.
+Causality reading:
 
-## Evidence
+> If the trees are not used to assess progress, then no evidence accumulates
+> that LTP helps, because the only evidence available would be the record of
+> using it (`ASM-6`).
 
-EVD-4–EVD-10. UDE-1, UDE-2, UDE-5, RC-2, RC-4, and RC-5 are closest to direct
-observation. Other present-reality statements remain inferred.
+This is why "get evidence it works" cannot be sequenced before "use it": the
+evidence is a by-product of use. It is also recorded as a contradiction — `IC-1`
+is given as a cause of low buy-in, but it is downstream of `UDE-4`, so neither
+is prior.
 
-## Assumptions
+## Structural corrections made
 
-ASM-2–ASM-18, especially the claim that uptake rather than idea generation is
-the constraint.
+- `IC-1` and `IC-2` are labelled intermediate, not root, causes. The notes list
+  them as leaves, but `IC-1` is caused by `UDE-4` and `IC-2` by `IC-14`.
+- `IC-11` is intermediate, not a leaf: the notes' own aside "(similar to UDE
+  below)" points at `IC-13`, which is modelled as its cause.
+- Root causes, with nothing beneath them: `IC-3`, `IC-5`, `IC-7`, `IC-8`,
+  `IC-10`, `IC-12`, `IC-13`, `IC-14`.
 
-## Confidence
+## Why `IC-4` is the constraint
 
-High for the governance and matching gaps; medium for causal sufficiency and
-the recurrence/hidden-contribution effects.
+- It is the named cause of the only three-flame effect.
+- It sits inside the reinforcing loop, not downstream of it.
+- Every hypothesis the notes attach to a cause aims at it: a transition tree,
+  tracked in a tracker, held in the repo, with a way to view it.
+- Its own causes (`IC-5` to `IC-8`) are small, concrete, and entirely within
+  David and Rufus's control — unlike `IC-2`, `IC-13`, or `IC-14`, which need
+  other people's behaviour to change.
 
-## Open reservations
+## Roots of this view
 
-- Actual meetings and revisions were not supplied.
-- Attendance, trust, time, facilitator capacity, or research quality could be
-  tighter constraints.
-- Repeated discussion may sometimes be productive revisiting, not failure.
-- The platform may be an exploratory prototype rather than the actual strategy.
-
-## Diagram
-
-```mermaid
-flowchart TB
-  RC2["RC-2 Undefined revision authority"] --> U1["UDE-1 No disposition"]
-  RC2 --> U2["UDE-2 Few points of failure"]
-  U1 --> U3["UDE-3 Discussion recurs"]
-  RC1["RC-1 No uptake loop"] --> U4["UDE-4 Freedom vs structure"]
-  U4 --> U8["UDE-8 Hidden contribution"]
-  U8 --> U6["UDE-6 Relevant research without model impact"]
-  RC1 --> U6
-  U6 --> U3
-  RC4["RC-4 Premature master-tree matching"] --> U5["UDE-5 Weak matches"]
-  RC5["RC-5 Undefined scale/graft semantics"] --> U7["UDE-7 Imposed universal frame"]
-```
-
-## Cross-tree references
-
-INJ-1 addresses RC-1, INJ-3 addresses RC-2, INJ-4 addresses RC-3, INJ-5
-addresses RC-4, and INJ-2 addresses RC-5.
-
+`UDE-1` and `UDE-3`. `UDE-2` and `UDE-4` are not roots because each causes
+another effect — correct causally, though it does place the three-flame effect
+one level in from the top of the tree.
