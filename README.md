@@ -3,6 +3,19 @@
 Evidence-backed Logical Thinking Process model for the Second Renaissance
 Research Circle.
 
+**Where the model lives (since 2026-09-06).** The live model is the Reason
+Commons space *Reason Commons Focus*, which is connected to this repository:
+<https://reason-commons.lovable.app/app/spaces/365f2925-1a97-4367-8df2-e76a7757540e>.
+Every sync exports it here as
+`.reason-commons/365f2925-1a97-4367-8df2-e76a7757540e.ltp.json` — the full
+interchange document with its version series and event history — and projects
+the transition tree's actions onto this repository's issues, which the platform
+opens, labels and reconciles itself. The `ltp/*.md` files are the July 2026
+analysis by the now-retired `project-ltp` skill, kept for the record and no
+longer maintained; the `ltp/ltp-model.yaml` they were rendered from, and the
+hand-run issue ledger beside it, were removed on 2026-09-06 because the space
+had superseded them and the copy no longer matched what the team accepts.
+
 The repository distinguishes three related systems:
 
 1. **2R proper** seeks durable cultural transformation.
@@ -27,16 +40,18 @@ resolving it:
 - The July 2026 exchange between David and Rufus says **duly improved 2R LTP
   trees**.
 
-Neither is a count of meetings, papers, or presentations. Only the second
-currently has observable history; the dashboard's generated throughput track for
-this project measures it from Git.
+Neither is a count of meetings, papers, or presentations. Only the second has
+observable history. The reasoncommons.com dashboard used to count it from this
+repository's Git history; that track was retired with the dashboard project on
+2026-09-06, and the measure now belongs in the space's own ratified throughput
+definition, which has not been defined yet.
 
-## Relationship to Project LTP
+## Relationship to Project LTP (historical)
 
-This repository is an analyzed project, not a copy of the `project-ltp` skill
-itself. Project LTP is a Logical Thinking Process skill that examines a
-project's source material, reconstructs its causal logic, and renders several
-views of one shared model:
+The July 2026 analysis under `ltp/` was produced by the `project-ltp` skill,
+now deprecated in favour of `ltp-project`, which writes the Reason Commons
+interchange format directly. Project LTP examined a project's source material,
+reconstructed its causal logic, and rendered several views of one shared model:
 
 - Goal Tree
 - Current Reality Tree
@@ -45,17 +60,12 @@ views of one shared model:
 - Prerequisite Tree
 - Transition Tree
 
-The portable contract between an analyzed project and the skill's dashboard is
-`ltp/ltp-model.yaml`. The Markdown files under `ltp/` are readable views and
-supporting analysis derived from that model.
+The Markdown files under `ltp/` are readable views and supporting analysis
+derived from the model as it stood in July 2026.
 
 Three of the six views exist here. The notes' conflict-resolution section is an
 empty stub, so no Evaporating Cloud, Future Reality Tree, or Prerequisite Tree is
 supported by the current evidence, and none is published.
-
-The portable contract between an analyzed project and the skill's dashboard is
-`ltp/ltp-model.yaml`. The Markdown files under `ltp/` are readable views and
-supporting analysis derived from that model.
 
 ## How this analysis was built
 
@@ -94,51 +104,28 @@ are intentional and should be preserved when the model is revised.
   forum and throughput exchanges.
 - `docs/ltp_trees/` — the pre-existing organization-level Second Renaissance
   trees, retained as prior work and reference material.
-- `ltp/` — the Project LTP analysis of David and Rufus as a system: goal tree,
-  current reality tree, transition tree, and the supporting diagnosis.
+- `ltp/` — the July 2026 Project LTP analysis of David and Rufus as a system:
+  goal tree, current reality tree, transition tree, and the supporting
+  diagnosis, kept for the record.
+- `.reason-commons/` — the current model, exported by the Reason Commons
+  platform from the connected space on every sync. This is the canonical file.
 
-`ltp/ltp-model.yaml` is the canonical shared causal model. The Markdown files are
-readable views of that same model.
+## Read the current model
 
-## Visualize this project
+Open the space at
+<https://reason-commons.lovable.app/app/spaces/365f2925-1a97-4367-8df2-e76a7757540e>,
+or read the exported `.reason-commons/365f2925-1a97-4367-8df2-e76a7757540e.ltp.json`
+in this repository. The export is the interchange document described in the
+Reason Commons import specification: current standing with its status and
+validity, the role hierarchy, relationships and their assumptions, accepted
+conclusions, and under `history` the superseded wordings, the accepted version
+series with its digest chain, and the event stream with the actor behind each
+change. It can be re-imported into any Reason Commons space, and the same
+document is available from the app as a YAML dialect.
 
-The dashboard is supplied by the Project LTP skill, so run its
-`serve_dashboard.py` script from wherever the skill is installed. From the
-root of this repository:
-
-```bash
-python3 /path/to/project-ltp/scripts/serve_dashboard.py \
-  --project "$(pwd)" \
-  --open
-```
-
-For example, if Project LTP is available in another repository at
-`skills/project-ltp`, run:
-
-```bash
-python3 /path/to/that-repository/skills/project-ltp/scripts/serve_dashboard.py \
-  --project "$(pwd)" \
-  --open
-```
-
-No user-specific filesystem path is required. `--project` identifies the
-project to visualize; the script path identifies the Project LTP installation
-that supplies the dashboard.
-
-The dashboard is local and read-only. When its preferred port is occupied, the
-server automatically selects another available port.
-
-## Visualize any Project LTP analysis
-
-The same dashboard can visualize any project over which Project LTP has been
-run, provided that project contains a valid `ltp/ltp-model.yaml`:
-
-```bash
-python3 /path/to/project-ltp/scripts/serve_dashboard.py \
-  --project /path/to/analyzed-project \
-  --open
-```
-
-The analyzed project and the Project LTP installation do not need to be in the
-same repository. If present, defensible observations in `throughput.yaml` are
-also displayed; the dashboard does not require or invent throughput history.
+The transition tree's actions are this repository's open issues labelled
+`rc:ready` (or `rc:blocked`, `rc:awaiting-outcome`, …), each with a managed
+section that names the action, why it matters, what it is expected to change,
+and a link back to the space. Closing an issue records that the work was
+reported done; whether it had its effect is answered in the space, not by the
+close.

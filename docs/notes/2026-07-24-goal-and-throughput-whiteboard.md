@@ -5,7 +5,8 @@ Framing question on the board: **"What is David and Rufus' goal and throughput?"
 
 This is a verbatim transcription of the board. Bracketed notes mark board
 layout (arrows, axis labels, marginal asterisks). Nothing is added or
-interpreted here; interpretation belongs in `ltp/ltp-model.yaml`.
+interpreted here; interpretation belongs in the model, which since 2026-09-06 is the
+Reason Commons space connected to this repository (see the README).
 
 ## Vision boxes
 
